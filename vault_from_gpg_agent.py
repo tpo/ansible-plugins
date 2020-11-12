@@ -27,6 +27,11 @@
 # Note that the path to this script is used as the cache key for this
 # password in gpg-agent.  For example, if you move this script to a
 # new path then you may be re-prompted for your password.
+#
+# Also, if you need to work with different passwords for different sets
+# of vaults, then your best bet currently is probably to have different
+# copies of this script, one for each set of vaults so that each set
+# has a different cache key.
 
 import subprocess
 import sys
